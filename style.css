@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fffdf0;
+    color: #2c302e;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #fef08a;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #2c302e;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #2c302e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ca8a04;
+}
+
+.hero {
+    background-color: #fef9c3;
+    color: #2c302e;
+    text-align: center;
+    padding: 3.5rem 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #fef08a;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #525252;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    background-color: #ffffff;
+    color: #2c302e;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 2px solid #fde047;
+}
+
+.btn-hero:hover {
+    background-color: #fde047;
+}
+
+.container {
+    padding: 0 5% 3rem 5%;
+}
+
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #fef08a;
+}
+
+.total-info {
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #fef08a;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 2px solid #fef08a;
+    border-radius: 10px;
+    padding: 1.2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-diskon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ef4444;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.category {
+    font-size: 0.8rem;
+    color: #854d0e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #2c302e;
+}
+
+.price-box {
+    margin-bottom: 0.8rem;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c302e;
+}
+
+.price-old {
+    font-size: 0.9rem;
+    color: #a3a3a3;
+    text-decoration: line-through;
+    margin-right: 6px;
+}
+
+.price-new {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #dc2626;
+}
+
+.stock-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.status {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.status-ready {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.status-empty {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.card-action {
+    margin-top: auto;
+}
+
+.btn-buy {
+    width: 100%;
+    padding: 0.65rem;
+    background-color: #fde047;
+    color: #2c302e;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background-color: #facc15;
+}
+
+.btn-disabled {
+    width: 100%;
+    padding: 0.65rem;
+    background-color: #e5e5e5;
+    color: #a3a3a3;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-top: 2px solid #fef08a;
+    color: #2c302e;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
